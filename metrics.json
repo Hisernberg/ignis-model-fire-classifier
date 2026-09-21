@@ -1,0 +1,72 @@
+{
+  "hgb_test_accuracy": 0.75,
+  "hgb_test_macro_f1": 0.546,
+  "hgb_train_macro_f1": 0.928,
+  "logreg_test_macro_f1": 0.306,
+  "n_train": 100609,
+  "n_test": 37509,
+  "classes": [
+    "ISOLATED",
+    "SCATTERED",
+    "EMERGING",
+    "ESTABLISHED",
+    "MEGAFIRE"
+  ],
+  "confusion_test": [
+    [
+      234,
+      103,
+      8,
+      27,
+      35
+    ],
+    [
+      62,
+      486,
+      100,
+      107,
+      178
+    ],
+    [
+      15,
+      225,
+      546,
+      414,
+      312
+    ],
+    [
+      27,
+      115,
+      239,
+      2562,
+      2907
+    ],
+    [
+      26,
+      137,
+      518,
+      3817,
+      24309
+    ]
+  ],
+  "class_counts": {
+    "MEGAFIRE": 85328,
+    "ESTABLISHED": 39209,
+    "EMERGING": 7172,
+    "SCATTERED": 4547,
+    "ISOLATED": 1862
+  },
+  "features": [
+    "log_frp",
+    "confidence_harmonized",
+    "is_night",
+    "acq_hour",
+    "is_viirs",
+    "dens_5km",
+    "dens_25km",
+    "dens_100km",
+    "frp_ratio"
+  ],
+  "split": "train days ['2026-09-16', '2026-09-17', '2026-09-18', '2026-09-19'] / test day 2026-09-20",
+  "labeling": "weak supervision from DBSCAN complex segmentation (app Fire Cluster Lab engine)"
+}
